@@ -26,8 +26,19 @@ public class DualPlayerMotor : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        p1_rb.velocity = new Vector2(p1_velocity, p1_rb.velocity.y);
-        p2_rb.velocity = new Vector2(p2_velocity, p2_rb.velocity.y);
+        // player's has collided in the left side and it's p1_velocity is negative
+        float common_x_velocity = 0.0f; 
+        if ((p1_rb.velocity.x == 0 && p1_velocity != 0) || (p2_rb.velocity.x == 0 && p2_velocity != 0)) {
+            common_x_velocity = 0.0f;
+        } else if (p1_velocity != p2_velocity) {
+            Debug.LogError("P1 and P2  X velocities are different: " + p1_velocity + " , " + p2_velocity);
+        } else {
+            common_x_velocity = p1_velocity;
+        }
+        p1_rb.velocity = new Vector2(common_x_velocity, p1_rb.velocity.y);
+        p2_rb.velocity = new Vector2(common_x_velocity, p2_rb.velocity.y);
+        // p1_rb.velocity = new Vector2(p1_velocity, p1_rb.velocity.y);
+        // p2_rb.velocity = new Vector2(p2_velocity, p2_rb.velocity.y);
 
         RaycastHit2D p1_hit = Physics2D.Raycast(player1.transform.position, -Vector2.up, 5000, layers);
         if (p1_hit.distance < 0.9f && p1_hit.collider != null)

@@ -5,3 +5,11 @@ player controller for both the players should send it to a common dual player mo
 change player_id to isSecondPlayer
 
 reduce friction for physics material to 0
+
+
+design: should player fall down if one of them is grounded and the other is
+not?
+
+New Master method: Better isGrounded defn
+
+Bug: very slow falling when falling from a ledge without jumping
