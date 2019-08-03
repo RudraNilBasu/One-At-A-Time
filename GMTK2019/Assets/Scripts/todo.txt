@@ -2,3 +2,6 @@ reduce friction for physics material to 0
 
 design: should player fall down if one of them is grounded and the other is
 not?
+
+
+NOTE: Wall / Collider Color hex: 292626
