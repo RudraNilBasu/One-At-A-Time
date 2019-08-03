@@ -8,7 +8,12 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     float moveSpeed, jumpSpeed;
 
-    PlayerMotor motor;
+    [SerializeField]
+    int player_id;
+
+    [SerializeField]
+    DualPlayerMotor motor;
+    // PlayerMotor motor;
 
     private Vector2 touchOrigin = -Vector2.one;
 
@@ -19,7 +24,10 @@ public class PlayerController : MonoBehaviour
     {
         btn_left_pressed = false;
         btn_right_pressed = false;
-        motor = gameObject.GetComponent<PlayerMotor>();
+        if (motor == null) {
+            Debug.LogError("Dual Player motor not found");
+        }
+        // motor = gameObject.GetComponent<PlayerMotor>();
     }
 
     // Update is called once per frame
@@ -57,11 +65,11 @@ public class PlayerController : MonoBehaviour
         speedX *= moveSpeed;
 #endif
 
-        motor.MoveBody(speedX);
+        motor.MoveBody(player_id, speedX);
 #if UNITY_STANDALONE || UNITY_WEBPLAYER
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            motor.jump(jumpSpeed);
+            motor.jump(player_id, jumpSpeed);
         }
 #elif UNITY_IOS || UNITY_ANDROID || UNITY_WP8 || UNITY_IPHONE
         /*
@@ -70,7 +78,7 @@ public class PlayerController : MonoBehaviour
         }
         */
         if (btn_left_pressed && btn_right_pressed) {
-            motor.jump(jumpSpeed);
+            motor.jump(player_id, jumpSpeed);
         }
 #endif
     }

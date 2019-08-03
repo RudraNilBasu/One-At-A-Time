@@ -14,6 +14,7 @@ public class PlayerMotor : MonoBehaviour
 
     [SerializeField]
     LayerMask layers;
+
     // Use this for initialization
     void Start()
     {
