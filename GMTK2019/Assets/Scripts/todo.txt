@@ -1,3 +1,8 @@
+textmeshpro
+level 04: Distorted / Broken worlds
+level ??: leap of faith
+
+death by height condition
 
 design: should player fall down if one of them is grounded and the other is
 not?
@@ -13,3 +18,17 @@ idea: no way as the way, no one way to do things
 theme: troubles of a bond, there will be restricitions in the path, we need
 sacrifices / different ways to tackle the problem to solve it compared to when
 we are alone
+
+things get difficult in a bond, but sometimes, we achieve the things we
+couldn't have done without it
+
+the bond becomes a burden in some puzzles
+sometimes, we might think breaking up the bond might make some of the puzzles
+easier, but it would make reaching some of the puzzles impossible
+
+compromises and sacrifices
+
+> "I slept and dreamt that life was joy. I awoke and saw that life was
+service. I acted and behold, service was joy."
+
+

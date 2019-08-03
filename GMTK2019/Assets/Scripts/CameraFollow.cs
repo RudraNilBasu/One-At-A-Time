@@ -22,6 +22,7 @@ public class CameraFollow : MonoBehaviour
 	
 	// Update is called once per frame
 	void Update () {
+        // Debug.Log("Distance: " + (player_2.position.x - player_1.position.x)); // 9.73
         // depending on the position of the two players, we will update the target
         Vector2 p1_camera_pos = Camera.main.WorldToViewportPoint(player_1.position);
         Vector2 p2_camera_pos = Camera.main.WorldToViewportPoint(player_2.position);
@@ -31,6 +32,8 @@ public class CameraFollow : MonoBehaviour
         } else if (p2_camera_pos.x >= 0.9f) {
             target = player_2;
             // FollowTarget(p2_camera_pos);
+        } else if(p1_camera_pos.y <= 0.3f || p1_camera_pos.y >= 0.9f) {
+            target = player_1;
         } else {
             return;
         }

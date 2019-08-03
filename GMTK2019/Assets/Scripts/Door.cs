@@ -21,7 +21,6 @@ public class Door : MonoBehaviour
     {
         if (col.tag == "Player")
         {
-            Debug.Log("Load next Level");
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1); 
         }
     }
