@@ -244,6 +244,7 @@ Animation:
   m_Animation: {fileID: 7400000, guid: 1fd1cd50324fcd045b0ef1b51d9fb6c2, type: 2}
   m_Animations:
   - {fileID: 7400000, guid: 1fd1cd50324fcd045b0ef1b51d9fb6c2, type: 2}
+  - {fileID: 7400000, guid: 1e4365e0d0993ae419c6ae9e846cf7dd, type: 2}
   m_WrapMode: 0
   m_PlayAutomatically: 0
   m_AnimatePhysics: 0
@@ -418,6 +419,7 @@ Animation:
   m_Animation: {fileID: 7400000, guid: 1fd1cd50324fcd045b0ef1b51d9fb6c2, type: 2}
   m_Animations:
   - {fileID: 7400000, guid: 1fd1cd50324fcd045b0ef1b51d9fb6c2, type: 2}
+  - {fileID: 7400000, guid: 1e4365e0d0993ae419c6ae9e846cf7dd, type: 2}
   m_WrapMode: 0
   m_PlayAutomatically: 0
   m_AnimatePhysics: 0

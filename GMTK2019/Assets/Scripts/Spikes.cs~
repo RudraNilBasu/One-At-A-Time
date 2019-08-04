@@ -30,6 +30,6 @@ public class Spikes : MonoBehaviour
     IEnumerator WaitAndLoad()
     {
         yield return new WaitForSeconds(0.1f);
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1); 
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex); 
     }
 }

@@ -1276,6 +1276,24 @@ PrefabInstance:
       propertyPath: motor
       value: 
       objectReference: {fileID: 1778212322}
+    - target: {fileID: 1434746992390013, guid: c35a7821616ea494e8283f9311a206f0, type: 3}
+      propertyPath: m_Animations.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1434746992390013, guid: c35a7821616ea494e8283f9311a206f0, type: 3}
+      propertyPath: m_Animations.Array.data[1]
+      value: 
+      objectReference: {fileID: 7400000, guid: 1e4365e0d0993ae419c6ae9e846cf7dd, type: 2}
+    - target: {fileID: 525711365727093680, guid: c35a7821616ea494e8283f9311a206f0,
+        type: 3}
+      propertyPath: m_Animations.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 525711365727093680, guid: c35a7821616ea494e8283f9311a206f0,
+        type: 3}
+      propertyPath: m_Animations.Array.data[1]
+      value: 
+      objectReference: {fileID: 7400000, guid: 1e4365e0d0993ae419c6ae9e846cf7dd, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c35a7821616ea494e8283f9311a206f0, type: 3}
 --- !u!4 &1710439303968196030 stripped

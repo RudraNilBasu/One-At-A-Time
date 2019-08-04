@@ -13,8 +13,7 @@ pushable blocks
 
 polish:
 - escape to main menu, escape to quit
-- camera shake: on player death, landing from a jump
-- death animation
+- fix camera shake
 - maybe camera follow speed will increase in case of horizontal movement?
 - [extra] level selector if we have 10 levels
 - camera still animation (field of view +-1 like breathing)
