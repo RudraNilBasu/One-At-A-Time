@@ -12,11 +12,12 @@ pushable blocks
 ---
 
 polish:
+- escape to main menu, escape to quit
 - camera shake: on player death, landing from a jump
 - death animation
 - maybe camera follow speed will increase in case of horizontal movement?
-- [DONE] fading
-- [extra] level selector
+- [extra] level selector if we have 10 levels
+- camera still animation (field of view +-1 like breathing)
 
 design: should player fall down if one of them is grounded and the other is
 not?

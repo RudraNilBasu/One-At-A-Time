@@ -88,6 +88,7 @@ GameObject:
   - component: {fileID: 1710439305321553569}
   - component: {fileID: 1710439305321553575}
   - component: {fileID: 1710439305321553574}
+  - component: {fileID: 1434746992390013}
   m_Layer: 0
   m_Name: DualPlayer1
   m_TagString: Untagged
@@ -231,6 +232,22 @@ MonoBehaviour:
   moveSpeed: 12
   jumpSpeed: 15
   motor: {fileID: 1710439305070568105}
+--- !u!111 &1434746992390013
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1710439305321553573}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 1fd1cd50324fcd045b0ef1b51d9fb6c2, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 1fd1cd50324fcd045b0ef1b51d9fb6c2, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &1710439305415823309
 GameObject:
   m_ObjectHideFlags: 0
@@ -245,6 +262,7 @@ GameObject:
   - component: {fileID: 1710439305415823305}
   - component: {fileID: 1710439305415823311}
   - component: {fileID: 1710439305415823310}
+  - component: {fileID: 525711365727093680}
   m_Layer: 0
   m_Name: DualPlayer2
   m_TagString: Untagged
@@ -388,3 +406,19 @@ MonoBehaviour:
   moveSpeed: 12
   jumpSpeed: 15
   motor: {fileID: 1710439305070568105}
+--- !u!111 &525711365727093680
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1710439305415823309}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 1fd1cd50324fcd045b0ef1b51d9fb6c2, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 1fd1cd50324fcd045b0ef1b51d9fb6c2, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_CullingType: 0

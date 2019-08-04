@@ -24,6 +24,8 @@ public class Door : MonoBehaviour
         if (col.tag == "Player")
         {
             fading_go.BeginFade(1);
+            GetComponent<Animation>().Play("end_anim_test_1");
+            col.gameObject.GetComponent<Animation>().Play("end_anim_test_1");
             StartCoroutine(WaitAndLoad());
         }
     }

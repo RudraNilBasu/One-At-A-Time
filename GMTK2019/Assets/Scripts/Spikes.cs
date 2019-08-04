@@ -21,7 +21,15 @@ public class Spikes : MonoBehaviour
     {
         if (col.tag == "Player")
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex); 
+            col.gameObject.GetComponent<Animation>().Play("end_anim_test_1");
+            StartCoroutine(WaitAndLoad());
+            // SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex); 
         }
+    }
+
+    IEnumerator WaitAndLoad()
+    {
+        yield return new WaitForSeconds(0.1f);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex); 
     }
 }
