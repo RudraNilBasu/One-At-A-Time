@@ -32,7 +32,7 @@ public class CameraFollow : MonoBehaviour
         } else if (p2_camera_pos.x >= 0.9f) {
             target = player_2;
             // FollowTarget(p2_camera_pos);
-        } else if(p1_camera_pos.y <= 0.4f || p1_camera_pos.y >= 0.9f) {
+        } else if(p1_camera_pos.y <= 0.3f || p1_camera_pos.y >= 0.9f) {
             target = player_1;
         } else {
             return;

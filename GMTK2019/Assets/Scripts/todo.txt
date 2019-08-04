@@ -4,6 +4,20 @@ level ??: leap of faith
 
 death by height condition
 
+maybe: make the x / y camera follow limit per level?
+intro to spikes level
+moving blocks +- 9.73?
+pushable blocks
+[TEST] players on different y column
+---
+
+polish:
+- camera shake: on player death, landing from a jump
+- death animation
+- maybe camera follow speed will increase in case of horizontal movement?
+- [DONE] fading
+- [extra] level selector
+
 design: should player fall down if one of them is grounded and the other is
 not?
 

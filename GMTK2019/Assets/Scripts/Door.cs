@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class Door : MonoBehaviour
 {
+    [SerializeField]
+    Fading fading_go;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,7 +23,14 @@ public class Door : MonoBehaviour
     {
         if (col.tag == "Player")
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1); 
+            fading_go.BeginFade(1);
+            StartCoroutine(WaitAndLoad());
         }
+    }
+
+    IEnumerator WaitAndLoad()
+    {
+        yield return new WaitForSeconds(0.1f);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1); 
     }
 }
