@@ -35,7 +35,7 @@ public class SingleMotorController : MonoBehaviour
         // {
             // motor.jump(jumpSpeed);
         // }
-#if UNITY_STANDALONE || UNITY_WEBPLAYER
+#if UNITY_STANDALONE || UNITY_WEBGL
         speedX = Input.GetAxisRaw("Horizontal") * moveSpeed;// * Time.deltaTime;
 #elif UNITY_IOS || UNITY_ANDROID || UNITY_WP8 || UNITY_IPHONE
         /*
@@ -61,7 +61,7 @@ public class SingleMotorController : MonoBehaviour
 #endif
 
         motor.MoveBody(speedX);
-#if UNITY_STANDALONE || UNITY_WEBPLAYER
+#if UNITY_STANDALONE || UNITY_WEBGL
         if (Input.GetKeyDown(KeyCode.Space))
         {
             motor.jump(jumpSpeed);

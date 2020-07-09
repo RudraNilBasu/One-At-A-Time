@@ -33,6 +33,10 @@ public class Door : MonoBehaviour
     IEnumerator WaitAndLoad()
     {
         yield return new WaitForSeconds(0.1f);
+        if (SceneManager.GetActiveScene().buildIndex != 5) {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1); 
+        } else {
+        SceneManager.LoadScene(0); 
+        }
     }
 }

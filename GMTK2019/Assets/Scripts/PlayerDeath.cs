@@ -3,29 +3,33 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Spikes : MonoBehaviour
+public class PlayerDeath : MonoBehaviour
 {
+    SpriteRenderer sprite;
+
+    [SerializeField]
+    Animation circle_anim;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        sprite = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (gameObject.transform.position.y < -20.0f) {
+            Die();
+            StartCoroutine(WaitAndLoad());
+        }
         
     }
 
-    void OnTriggerEnter2D(Collider2D col)
+    public void Die()
     {
-        if (col.tag == "Player")
-        {
-            col.gameObject.GetComponent<PlayerDeath>().Die();
-            // col.gameObject.GetComponent<Animation>().Play("death_anim_test_1");
-            StartCoroutine(WaitAndLoad());
-            // SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex); 
-        }
+        sprite.enabled = false;
+        circle_anim.Play("death_anim_test_2");
     }
 
     IEnumerator WaitAndLoad()

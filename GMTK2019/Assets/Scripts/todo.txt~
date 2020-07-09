@@ -3,17 +3,15 @@ level 04: Distorted / Broken worlds
 level ??: leap of faith
 
 death by height condition
-
+[TEST] players on different y column
 maybe: make the x / y camera follow limit per level?
-intro to spikes level
 moving blocks +- 9.73?
 pushable blocks
-[TEST] players on different y column
 ---
 
 polish:
-- escape to main menu, escape to quit
-- camera shake: on player death, landing from a jump
+- better spike death animation (circle anim increase and decrease)
+- fix camera shake
 - maybe camera follow speed will increase in case of horizontal movement?
 - [extra] level selector if we have 10 levels
 - camera still animation (field of view +-1 like breathing)
